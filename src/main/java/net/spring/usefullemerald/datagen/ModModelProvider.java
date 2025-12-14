@@ -11,7 +11,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.spring.usefullemerald.UsefullEmerald;
 import net.spring.usefullemerald.items.ModArmorMaterials;
-import net.spring.usefullemerald.blocks.ModBlocks;
+import net.spring.usefullemerald.block.ModBlocks;
 import net.spring.usefullemerald.items.ModItems;
 
 import java.util.stream.Stream;

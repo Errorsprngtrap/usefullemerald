@@ -1,6 +1,6 @@
 package net.spring.usefullemerald.datagen;
 
-import net.spring.usefullemerald.blocks.ModBlocks;
+import net.spring.usefullemerald.block.ModBlocks;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;

@@ -1,6 +1,6 @@
 package net.spring.usefullemerald;
 
-import net.spring.usefullemerald.blocks.ModBlocks;
+import net.spring.usefullemerald.block.ModBlocks;
 import net.spring.usefullemerald.items.ModItems;
 import org.slf4j.Logger;
 
