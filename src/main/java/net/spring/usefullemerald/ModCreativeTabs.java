@@ -20,6 +20,7 @@ public class ModCreativeTabs {
             .title(Component.translatable("creativetab.usefull_emerald.emerald_nugget"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.EMERALD_NUGGET);
+                        output.accept(ModItems.REINFORCED_EMERALD);
                         output.accept(ModItems.EMERALD_APPLE);
                         output.accept(ModItems.EMERALD_AXE);
                         output.accept(ModItems.EMERALD_SHOVEL);
