@@ -6,6 +6,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.spring.usefullemerald.block.ModBlocks;
 import net.spring.usefullemerald.items.ModItems;
 
 import java.util.function.Supplier;
@@ -31,6 +32,8 @@ public class ModCreativeTabs {
                         output.accept(ModItems.EMERALD_CHESTPLATE);
                         output.accept(ModItems.EMERALD_LEGGINGS);
                         output.accept(ModItems.EMERALD_BOOTS);
+                        output.accept(ModBlocks.DEEPSLATE_REINFORCED_EMERALD_ORE);
+                        output.accept(ModBlocks.REINFORCED_EMERALD_ORE);
 
                     }).build()
     );

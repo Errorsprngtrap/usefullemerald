@@ -1,4 +1,8 @@
-// 1.21.10	2025-12-14T22:14:15.4069447	Tags for minecraft:block mod id usefullemerald
-c0249c0a6e2209a4f8b2295bda1221277e7fc286 data/minecraft/tags/block/mineable/pickaxe.json
+// 1.21.10	2025-12-15T14:04:14.432113	Tags for minecraft:block mod id usefullemerald
+950a086f855d118e00d3fc9697663c7721c42db1 data/minecraft/tags/block/incorrect_for_copper_tool.json
+ff25dff4ed959ed173c907f4a0e824771f3baf38 data/minecraft/tags/block/incorrect_for_iron_tool.json
+950a086f855d118e00d3fc9697663c7721c42db1 data/minecraft/tags/block/incorrect_for_stone_tool.json
+b239e7b03736ed687b12fa515c9a1139f07cc1a8 data/minecraft/tags/block/incorrect_for_wooden_tool.json
+ff25dff4ed959ed173c907f4a0e824771f3baf38 data/minecraft/tags/block/mineable/pickaxe.json
 a71bf9f0fbee198117a133343959ca88de0f1fc0 data/usefullemerald/tags/block/incorrect_for_emerald_tool.json
-45f5e96d29d7eb60d8072196ce1f08a7f9cac647 data/usefullemerald/tags/block/needs_emerald_tool.json
+aee6522db66c59fc429c07a9ee27473541b08fff data/usefullemerald/tags/block/needs_emerald_tool.json

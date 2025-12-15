@@ -25,6 +25,13 @@ public class ModBlocks {
             )
     );
 
+    public static final DeferredBlock<Block> DEEPSLATE_REINFORCED_EMERALD_ORE = registerBlock(
+            "deepslate_reinforced_emerald_ore",
+            (properties) -> new DropExperienceBlock(UniformInt.of(1, 3),
+                    properties.requiresCorrectToolForDrops().sound(SoundType.STONE).strength(2f).destroyTime(3f)
+            )
+    );
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function) {
         DeferredBlock<T> toReturn = BLOCKS.registerBlock(name, function);
         registerBlockItem(name, toReturn);

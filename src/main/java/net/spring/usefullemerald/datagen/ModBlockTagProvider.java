@@ -19,10 +19,25 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.REINFORCED_EMERALD_ORE.get());
+                .add(ModBlocks.REINFORCED_EMERALD_ORE.get())
+                .add(ModBlocks.DEEPSLATE_REINFORCED_EMERALD_ORE.get());
+
+        tag(BlockTags.INCORRECT_FOR_IRON_TOOL)
+                .add(ModBlocks.REINFORCED_EMERALD_ORE.get())
+                .add(ModBlocks.DEEPSLATE_REINFORCED_EMERALD_ORE.get());
+
+        tag(BlockTags.INCORRECT_FOR_COPPER_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL);
+
+        tag(BlockTags.INCORRECT_FOR_STONE_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL);
+
+        tag(BlockTags.INCORRECT_FOR_WOODEN_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_STONE_TOOL);
 
         tag(ModTags.Blocks.NEEDS_EMERALD_TOOL)
                 .add(ModBlocks.REINFORCED_EMERALD_ORE.get())
+                .add(ModBlocks.DEEPSLATE_REINFORCED_EMERALD_ORE.get())
                 .addTag(BlockTags.NEEDS_IRON_TOOL);
 
         tag(ModTags.Blocks.INCORRECT_FOR_EMERALD_TOOL)
