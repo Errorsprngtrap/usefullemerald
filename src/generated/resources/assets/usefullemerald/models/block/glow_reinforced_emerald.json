@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "usefullemerald:block/glow_reinforced_emerald"
+  }
+}

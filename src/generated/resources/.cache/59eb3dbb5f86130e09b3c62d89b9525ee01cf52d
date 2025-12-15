@@ -1,3 +1,5 @@
-// 1.21.10	2025-12-15T14:00:32.7343549	Loot Tables
+// 1.21.10	2025-12-15T14:51:45.9309925	Loot Tables
 2180cb1a00bfda2666b48bbb817d659191127751 data/usefullemerald/loot_table/blocks/deepslate_reinforced_emerald_ore.json
+1fde6f1a6603aa7fbb172240ed5dd0a39575e9e6 data/usefullemerald/loot_table/blocks/glow_reinforced_emerald.json
+134a7a1fc906f3d2145e220be2bfd27909e9a0e3 data/usefullemerald/loot_table/blocks/reinforced_emerald_block.json
 512bd5590ee6140ab2874521d04215253c7674c3 data/usefullemerald/loot_table/blocks/reinforced_emerald_ore.json

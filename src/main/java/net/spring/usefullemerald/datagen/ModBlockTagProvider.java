@@ -20,11 +20,15 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.REINFORCED_EMERALD_ORE.get())
-                .add(ModBlocks.DEEPSLATE_REINFORCED_EMERALD_ORE.get());
+                .add(ModBlocks.DEEPSLATE_REINFORCED_EMERALD_ORE.get())
+                .add(ModBlocks.REINFORCED_EMERALD_BLOCK.get())
+                .add(ModBlocks.GLOW_REINFORCED_EMERALD.get());
 
         tag(BlockTags.INCORRECT_FOR_IRON_TOOL)
                 .add(ModBlocks.REINFORCED_EMERALD_ORE.get())
-                .add(ModBlocks.DEEPSLATE_REINFORCED_EMERALD_ORE.get());
+                .add(ModBlocks.DEEPSLATE_REINFORCED_EMERALD_ORE.get())
+                .add(ModBlocks.REINFORCED_EMERALD_BLOCK.get())
+                .add(ModBlocks.GLOW_REINFORCED_EMERALD.get());
 
         tag(BlockTags.INCORRECT_FOR_COPPER_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL);
@@ -38,6 +42,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(ModTags.Blocks.NEEDS_EMERALD_TOOL)
                 .add(ModBlocks.REINFORCED_EMERALD_ORE.get())
                 .add(ModBlocks.DEEPSLATE_REINFORCED_EMERALD_ORE.get())
+                .add(ModBlocks.REINFORCED_EMERALD_BLOCK.get())
+                .add(ModBlocks.GLOW_REINFORCED_EMERALD.get())
                 .addTag(BlockTags.NEEDS_IRON_TOOL);
 
         tag(ModTags.Blocks.INCORRECT_FOR_EMERALD_TOOL)

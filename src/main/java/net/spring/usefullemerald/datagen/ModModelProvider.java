@@ -43,6 +43,8 @@ public class ModModelProvider extends ModelProvider {
         //Block
         blockModels.createTrivialCube(ModBlocks.REINFORCED_EMERALD_ORE.get());
         blockModels.createTrivialCube(ModBlocks.DEEPSLATE_REINFORCED_EMERALD_ORE.get());
+        blockModels.createTrivialCube(ModBlocks.REINFORCED_EMERALD_BLOCK.get());
+        blockModels.createTrivialCube(ModBlocks.GLOW_REINFORCED_EMERALD.get());
     }
 
     //add filter for custom block

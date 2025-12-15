@@ -34,6 +34,8 @@ public class ModCreativeTabs {
                         output.accept(ModItems.EMERALD_BOOTS);
                         output.accept(ModBlocks.DEEPSLATE_REINFORCED_EMERALD_ORE);
                         output.accept(ModBlocks.REINFORCED_EMERALD_ORE);
+                        output.accept(ModBlocks.REINFORCED_EMERALD_BLOCK);
+                        output.accept(ModBlocks.GLOW_REINFORCED_EMERALD);
 
                     }).build()
     );

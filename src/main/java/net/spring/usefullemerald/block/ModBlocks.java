@@ -32,6 +32,27 @@ public class ModBlocks {
             )
     );
 
+    public static final DeferredBlock<Block> REINFORCED_EMERALD_BLOCK = registerBlock(
+            "reinforced_emerald_block",
+            (properties) -> new Block(properties.requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)
+                    .strength(5f)
+                    .destroyTime(6f)
+                    .explosionResistance(10f)
+            )
+    );
+
+    public static final DeferredBlock<Block> GLOW_REINFORCED_EMERALD = registerBlock(
+            "glow_reinforced_emerald",
+            (properties) -> new Block(properties.requiresCorrectToolForDrops()
+                    .sound(SoundType.GLASS)
+                    .strength(1f)
+                    .destroyTime(0.25f)
+                    .lightLevel((p_50876_) -> 15)
+            )
+    );
+
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function) {
         DeferredBlock<T> toReturn = BLOCKS.registerBlock(name, function);
         registerBlockItem(name, toReturn);

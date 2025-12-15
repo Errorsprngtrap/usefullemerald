@@ -2,6 +2,8 @@
   "values": [
     "usefullemerald:reinforced_emerald_ore",
     "usefullemerald:deepslate_reinforced_emerald_ore",
+    "usefullemerald:reinforced_emerald_block",
+    "usefullemerald:glow_reinforced_emerald",
     "#minecraft:needs_iron_tool"
   ]
 }

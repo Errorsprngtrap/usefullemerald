@@ -38,6 +38,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> OreDrops(ModBlocks.DEEPSLATE_REINFORCED_EMERALD_ORE.get(),
                         ModItems.REINFORCED_EMERALD.get(),1.0f,4.0f));
 
+        dropSelf(ModBlocks.REINFORCED_EMERALD_BLOCK.get());
+        dropSelf(ModBlocks.GLOW_REINFORCED_EMERALD.get());
+
     }
 
     protected LootTable.Builder OreDrops(Block block, Item item,float min,float max) {
