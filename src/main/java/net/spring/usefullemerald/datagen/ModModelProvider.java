@@ -24,7 +24,6 @@ public class ModModelProvider extends ModelProvider {
 
     @Override
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
-        super.registerModels(blockModels, itemModels);
 
         itemModels.generateFlatItem(ModItems.EMERALD_NUGGET.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.REINFORCED_EMERALD.get(), ModelTemplates.FLAT_ITEM);

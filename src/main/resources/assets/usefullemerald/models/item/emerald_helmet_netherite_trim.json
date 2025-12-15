@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "usefullemerald:item/emerald_helmet",
+    "layer1": "usefullemerald:emerald_netherite"
+  }
+}
