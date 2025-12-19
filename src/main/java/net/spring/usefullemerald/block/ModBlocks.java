@@ -48,7 +48,7 @@ public class ModBlocks {
                     .sound(SoundType.GLASS)
                     .strength(1f)
                     .destroyTime(0.25f)
-                    .lightLevel((p_50876_) -> 15)
+                    .lightLevel((p_50876_) -> 10)
             )
     );
 

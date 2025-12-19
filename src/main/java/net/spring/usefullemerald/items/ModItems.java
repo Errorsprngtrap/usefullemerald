@@ -28,33 +28,33 @@ public class ModItems {
             "emerald_sword",
             props -> new Item(
                     // The item properties.
-                    props.sword(ModToolMaterial.EMERALD,2f,1f)
+                    props.sword(ModToolMaterial.EMERALD,4f,-1.8f)
             )
     );
 
     public static final DeferredItem<Item> EMERALD_PICKAXE = ITEMS.registerItem(
             "emerald_pickaxe",
             props -> new Item(
-                    props.pickaxe(ModToolMaterial.EMERALD,2f,1f)
+                    props.pickaxe(ModToolMaterial.EMERALD,2f,-2.5f)
             )
     );
 
     public static final DeferredItem<Item> EMERALD_AXE = ITEMS.registerItem(
             "emerald_axe",
             props -> new AxeItem(
-                    ModToolMaterial.EMERALD,3f,1.5f,props)
+                    ModToolMaterial.EMERALD,4.5f,-3f,props)
     );
 
     public static final DeferredItem<Item> EMERALD_SHOVEL = ITEMS.registerItem(
             "emerald_shovel",
             props -> new ShovelItem(
-                    ModToolMaterial.EMERALD,3f,1.5f,props)
+                    ModToolMaterial.EMERALD,2f,-2.4f,props)
     );
 
     public static final DeferredItem<Item> EMERALD_HOE = ITEMS.registerItem(
             "emerald_hoe",
             props -> new HoeItem(
-                    ModToolMaterial.EMERALD,3f,1.5f,props)
+                    ModToolMaterial.EMERALD,2f,-2.5f,props)
     );
 
     //food
