@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "B": "usefullemerald:emerald_nugget",
+    "L": "minecraft:glowstone"
+  },
+  "pattern": [
+    "BBB",
+    "BLB",
+    "BBB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "usefullemerald:glow_reinforced_emerald"
+  }
+}

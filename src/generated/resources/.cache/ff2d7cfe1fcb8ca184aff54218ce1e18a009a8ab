@@ -1,2 +1,6 @@
-// 1.21.10	2025-12-14T22:14:15.4049424	Tags for minecraft:item mod id usefullemerald
+// 1.21.10	2025-12-20T17:33:58.2473773	Tags for minecraft:item mod id usefullemerald
+f8e180594268a8c7ebb39e8e34e0e145df13dc7f data/minecraft/tags/item/axes.json
+ac20631632601c2573384e9fc1bac1ab46b52b74 data/minecraft/tags/item/hoes.json
 3aadd0bfbb89c5fca0e377815ff6012021170a11 data/minecraft/tags/item/pickaxes.json
+726a562ad6a62c8dfbf67509e8f67257579c0b06 data/minecraft/tags/item/shovels.json
+165983d419cfd551d5606d148bc7de8d7a32a966 data/minecraft/tags/item/swords.json

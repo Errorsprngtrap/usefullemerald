@@ -171,6 +171,7 @@ publishing {
         maven {
             url "file://${project.projectDir}/repo"
         }
+
     }
 }
 

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "B": "usefullemerald:reinforced_emerald",
+    "L": "minecraft:stick"
+  },
+  "pattern": [
+    "  B",
+    " B ",
+    "L  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "usefullemerald:emerald_rapier"
+  }
+}

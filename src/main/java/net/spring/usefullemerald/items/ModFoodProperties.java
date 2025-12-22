@@ -17,7 +17,7 @@ public class ModFoodProperties {
             new ApplyStatusEffectsConsumeEffect(
                     List.of(
                             new MobEffectInstance(MobEffects.ABSORPTION,200),
-                            new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE,600),
+                            new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE,100),
                             new MobEffectInstance(MobEffects.JUMP_BOOST,400,1),
                             new MobEffectInstance(MobEffects.SPEED,400,1)
                     )

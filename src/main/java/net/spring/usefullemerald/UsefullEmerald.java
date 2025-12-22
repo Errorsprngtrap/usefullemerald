@@ -1,6 +1,7 @@
 package net.spring.usefullemerald;
 
 import net.spring.usefullemerald.block.ModBlocks;
+import net.spring.usefullemerald.effect.ModEffects;
 import net.spring.usefullemerald.items.ModItems;
 import org.slf4j.Logger;
 
@@ -40,6 +41,9 @@ public class UsefullEmerald {
 
         //register Creative Tabs
         ModCreativeTabs.register(modEventBus);
+
+        //register Effect
+        ModEffects.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

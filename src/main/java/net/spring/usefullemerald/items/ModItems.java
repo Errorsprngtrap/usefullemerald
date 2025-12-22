@@ -1,5 +1,7 @@
 package net.spring.usefullemerald.items;
 
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
@@ -9,6 +11,9 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.spring.usefullemerald.UsefullEmerald;
+import net.spring.usefullemerald.effect.ModEffects;
+import net.spring.usefullemerald.items.custom.Dagger;
+import net.spring.usefullemerald.items.custom.Rapier;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(UsefullEmerald.MODID);
@@ -28,7 +33,7 @@ public class ModItems {
             "emerald_sword",
             props -> new Item(
                     // The item properties.
-                    props.sword(ModToolMaterial.EMERALD,4f,-1.8f)
+                    props.sword(ModToolMaterial.EMERALD,4f,-2f)
             )
     );
 
@@ -55,6 +60,18 @@ public class ModItems {
             "emerald_hoe",
             props -> new HoeItem(
                     ModToolMaterial.EMERALD,2f,-2.5f,props)
+    );
+
+    //dagger
+    public static final DeferredItem<Item> EMERALD_DAGGER = ITEMS.registerItem(
+            "emerald_dagger",
+            props -> new Dagger(props.durability(10), ModEffects.BLEED_EFFECT)
+    );
+
+    //rapier
+    public static final DeferredItem<Item> EMERALD_RAPIER = ITEMS.registerItem(
+            "emerald_rapier",
+            props -> new Rapier(props.durability(10))
     );
 
     //food

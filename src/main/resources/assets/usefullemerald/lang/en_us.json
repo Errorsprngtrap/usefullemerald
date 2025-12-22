@@ -1,7 +1,5 @@
 {
   "itemGroup.usefullemerald": "Example Mod Tab",
-  "block.usefullemerald.example_block": "Example Block",
-  "item.usefullemerald.example_item": "Example Item",
 
   "usefullemerald.configuration.title": "Usefull Emerald Configs",
   "usefullemerald.configuration.section.usefullemerald.common.toml": "Usefull Emerald Configs",
@@ -11,5 +9,5 @@
   "usefullemerald.configuration.magicNumberIntroduction": "Magic Number Text",
   "usefullemerald.configuration.magicNumber": "Magic Number",
 
-  "creativetab.usefull_emerald.emerald_nugget": "Bismuth Items"
+  "creativetab.usefull_emerald.emerald_nugget": "Emerald Items"
 }

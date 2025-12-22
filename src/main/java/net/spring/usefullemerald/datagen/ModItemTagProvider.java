@@ -18,5 +18,15 @@ public class ModItemTagProvider extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         tag(ItemTags.PICKAXES)
                 .add(ModItems.EMERALD_PICKAXE.get());
+        tag(ItemTags.SHOVELS)
+            .add(ModItems.EMERALD_SHOVEL.get());
+        tag(ItemTags.SWORDS)
+                .add(ModItems.EMERALD_SWORD.get());
+        tag(ItemTags.AXES)
+                .add(ModItems.EMERALD_AXE.get());
+        tag(ItemTags.HOES)
+                .add(ModItems.EMERALD_HOE.get());
+
     }
+
 }

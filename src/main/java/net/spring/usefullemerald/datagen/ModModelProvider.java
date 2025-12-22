@@ -34,6 +34,8 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.EMERALD_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.EMERALD_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.EMERALD_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.EMERALD_DAGGER.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.EMERALD_RAPIER.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
 
         itemModels.generateTrimmableItem(ModItems.EMERALD_HELMET.get(), ModArmorMaterials.EMERALD,ResourceLocation.fromNamespaceAndPath(UsefullEmerald.MODID, "emerald"),false);
         itemModels.generateTrimmableItem(ModItems.EMERALD_CHESTPLATE.get(), ModArmorMaterials.EMERALD,ResourceLocation.fromNamespaceAndPath(UsefullEmerald.MODID, "emerald"),false);

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "B": "minecraft:emerald",
+    "L": "minecraft:stick"
+  },
+  "pattern": [
+    "BBB",
+    " L ",
+    " L "
+  ],
+  "result": {
+    "count": 1,
+    "id": "usefullemerald:emerald_pickaxe"
+  }
+}

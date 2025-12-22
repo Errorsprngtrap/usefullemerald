@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "B": "minecraft:emerald"
+  },
+  "pattern": [
+    "BBB",
+    "B B",
+    "B B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "usefullemerald:emerald_leggings"
+  }
+}

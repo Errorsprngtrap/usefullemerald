@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "A": "minecraft:apple",
+    "B": "usefullemerald:reinforced_emerald"
+  },
+  "pattern": [
+    "BBB",
+    "BAB",
+    "BBB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "usefullemerald:emerald_apple"
+  }
+}
