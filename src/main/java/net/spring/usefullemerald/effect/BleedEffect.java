@@ -17,10 +17,26 @@ public class BleedEffect extends MobEffect {
     @Override
     public boolean applyEffectTick(ServerLevel level, LivingEntity entity, int amplifier) {
         Random rand = new Random();
-        int rd = rand.nextInt(50);
-        if  (rd == 0) {
-            entity.hurtServer(level, level.damageSources().magic(),1);
-            return true;
+        int rd;
+        if (amplifier == 0) {
+            rd = rand.nextInt(50);
+            if  (rd == 0) {
+                entity.hurtServer(level, level.damageSources().magic(),1);
+                return true;
+            }
+        }
+        else if (amplifier == 1) {
+            rd = rand.nextInt(40);
+            if  (rd == 0) {
+                entity.hurtServer(level, level.damageSources().magic(),1);
+                return true;
+            }
+        }else if (amplifier == 2) {
+            rd = rand.nextInt(30);
+            if  (rd == 0) {
+                entity.hurtServer(level, level.damageSources().magic(),1);
+                return true;
+            }
         }
         return super.applyEffectTick(level,entity, amplifier);
     }

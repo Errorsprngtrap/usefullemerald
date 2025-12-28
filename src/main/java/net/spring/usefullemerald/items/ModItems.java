@@ -1,11 +1,13 @@
 package net.spring.usefullemerald.items;
 
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ShovelItem;
+import net.minecraft.world.item.enchantment.Enchantable;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -65,13 +67,16 @@ public class ModItems {
     //dagger
     public static final DeferredItem<Item> EMERALD_DAGGER = ITEMS.registerItem(
             "emerald_dagger",
-            props -> new Dagger(props.durability(10), ModEffects.BLEED_EFFECT)
+            props -> new Dagger(props.durability(250)
+                    .component(DataComponents.ENCHANTABLE,new Enchantable(10))
+                    , ModEffects.BLEED_EFFECT)
     );
 
     //rapier
     public static final DeferredItem<Item> EMERALD_RAPIER = ITEMS.registerItem(
             "emerald_rapier",
-            props -> new Rapier(props.durability(10))
+            props -> new Rapier(props.durability(250)
+                    .component(DataComponents.ENCHANTABLE,new Enchantable(10)))
     );
 
     //food
@@ -109,6 +114,34 @@ public class ModItems {
             "emerald_boots",
             properties ->  new Item(properties.humanoidArmor(
                     ModArmorMaterials.EMERALD_ARMOR_MATERIAL, ArmorType.BOOTS
+            ))
+    );
+
+    public static final DeferredItem<Item> REINFORCED_EMERALD_HELMET = ITEMS.registerItem(
+            "reinforced_emerald_helmet",
+            properties ->  new Item(properties.humanoidArmor(
+                    ModArmorMaterials.REINFORCED_EMERALD_ARMOR_MATERIAL, ArmorType.HELMET
+            ))
+    );
+
+    public static final DeferredItem<Item> REINFORCED_EMERALD_CHESTPLATE = ITEMS.registerItem(
+            "reinforced_emerald_chestplate",
+            properties ->  new Item(properties.humanoidArmor(
+                    ModArmorMaterials.REINFORCED_EMERALD_ARMOR_MATERIAL, ArmorType.CHESTPLATE
+            ))
+    );
+
+    public static final DeferredItem<Item> REINFORCED_EMERALD_LEGGINGS = ITEMS.registerItem(
+            "reinforced_emerald_leggings",
+            properties ->  new Item(properties.humanoidArmor(
+                    ModArmorMaterials.REINFORCED_EMERALD_ARMOR_MATERIAL, ArmorType.LEGGINGS
+            ))
+    );
+
+    public static final DeferredItem<Item> REINFORCED_EMERALD_BOOTS = ITEMS.registerItem(
+            "reinforced_emerald_boots",
+            properties ->  new Item(properties.humanoidArmor(
+                    ModArmorMaterials.REINFORCED_EMERALD_ARMOR_MATERIAL, ArmorType.BOOTS
             ))
     );
 

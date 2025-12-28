@@ -1,4 +1,6 @@
-// 1.21.10	2025-12-18T20:16:09.5447455	Registries
+// 1.21.10	2025-12-28T17:51:52.1323137	Registries
+2788dd6a2fe71d1eccc241d1a605d6b87bebdb1c data/usefullemerald/enchantment/pointy_rapier.json
+ec6666ac7f23365ea50e8ff32d660cb7e4792c56 data/usefullemerald/enchantment/poison_dagger.json
 d0bd5a3efd505323f09273033c63fdb66dc239b7 data/usefullemerald/neoforge/biome_modifier/add_reinforced_emerald_ore.json
 a2cf807d004af2ee6f5306d4325a24bf78261f75 data/usefullemerald/worldgen/configured_feature/reinforced_emerald_ore.json
 fe1f6af4bdb70b773a5c99fe4d1c3914df15fa88 data/usefullemerald/worldgen/placed_feature/overworld_reinforced_emerald_ore_placed.json

@@ -9,5 +9,39 @@
   "usefullemerald.configuration.magicNumberIntroduction": "Magic Number Text",
   "usefullemerald.configuration.magicNumber": "Magic Number",
 
-  "creativetab.usefull_emerald.emerald_nugget": "Emerald Items"
+  "creativetab.usefull_emerald.emerald_nugget": "Emerald Items",
+
+  "block.usefullemerald.reinforced_emerald_block": "Reinforced Emerald Block",
+  "block.usefullemerald.glow_reinforced_emerald": "Glow Reinforced Emerald",
+  "block.usefullemerald.reinforced_emerald_ore": "Reinforced Emerald Ore",
+  "block.usefullemerald.deepslate_reinforced_emerald_ore": "Deepslate Reinforced Emerald Ore",
+
+  "item.usefullemerald.emerald_nugget": "Emerald Nugget",
+  "item.usefullemerald.emerald_apple": "Emerald Apple",
+
+  "item.usefullemerald.emerald_helmet": "Emerald Helmet",
+  "item.usefullemerald.emerald_chestplate": "Emerald Chestplate",
+  "item.usefullemerald.emerald_leggings": "Emerald Leggings",
+  "item.usefullemerald.emerald_boots": "Emerald Boots",
+
+  "item.usefullemerald.emerald_sword": "Emerald Sword",
+  "item.usefullemerald.emerald_axe": "Emerald Axe",
+  "item.usefullemerald.emerald_pickaxe": "Emerald Pickaxe",
+  "item.usefullemerald.emerald_hoe": "Emerald Hoe",
+  "item.usefullemerald.emerald_shovel": "Emerald Shovel",
+
+  "item.usefullemerald.reinforced_emerald": "Reinforced Emerald",
+
+  "item.usefullemerald.reinforced_emerald_helmet": "Reinforced Emerald Helmet",
+  "item.usefullemerald.reinforced_emerald_chestplate": "Reinforced Emerald Chestplate",
+  "item.usefullemerald.reinforced_emerald_leggings": "Reinforced Emerald Leggings",
+  "item.usefullemerald.reinforced_emerald_boots": "Reinforced Emerald Boots",
+
+  "item.usefullemerald.emerald_dagger": "Emerald Dagger",
+  "item.usefullemerald.emerald_rapier": "Emerald Rapier",
+
+  "enchantment.usefullemerald.pointy_rapier": "Pointy Rapier",
+  "enchantment.usefullemerald.poison_dagger": "Poison Dagger",
+
+  "effect.usefullemerald.bleed": "Bleed"
 }

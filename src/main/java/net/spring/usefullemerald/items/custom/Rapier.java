@@ -1,7 +1,9 @@
 package net.spring.usefullemerald.items.custom;
 
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EquipmentSlotGroup;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -12,6 +14,12 @@ import static net.minecraft.world.entity.ai.attributes.Attributes.*;
 public class Rapier extends Item {
     public Rapier(Properties properties) {
         super(properties);
+    }
+
+    @Override
+    public void hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+        stack.hurtAndBreak(1,attacker, EquipmentSlot.MAINHAND);
+        super.hurtEnemy(stack, target, attacker);
     }
 
     @Override

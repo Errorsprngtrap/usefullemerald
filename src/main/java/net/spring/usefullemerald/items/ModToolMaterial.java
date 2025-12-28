@@ -8,7 +8,7 @@ public class ModToolMaterial {
     public static final ToolMaterial EMERALD = new ToolMaterial(
             ModTags.Blocks.INCORRECT_FOR_EMERALD_TOOL,
             250,
-            1f,
+            3f,
             1.5f,
             30,
             Tags.Items.GEMS_EMERALD

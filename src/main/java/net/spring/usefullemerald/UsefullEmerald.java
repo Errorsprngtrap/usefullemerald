@@ -2,6 +2,8 @@ package net.spring.usefullemerald;
 
 import net.spring.usefullemerald.block.ModBlocks;
 import net.spring.usefullemerald.effect.ModEffects;
+import net.spring.usefullemerald.enchantment.ModEnchantmentEffects;
+import net.spring.usefullemerald.enchantment.ModEnchantments;
 import net.spring.usefullemerald.items.ModItems;
 import org.slf4j.Logger;
 
@@ -45,8 +47,13 @@ public class UsefullEmerald {
         //register Effect
         ModEffects.register(modEventBus);
 
+        //register enchants
+        ModEnchantmentEffects.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
+
+
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

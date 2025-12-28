@@ -1,0 +1,32 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.usefullemerald.pointy_rapier"
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "usefullemerald:poison_dagger"
+        },
+        "enchanted": "attacker"
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 7
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 2,
+    "per_level_above_first": 7
+  },
+  "primary_items": "#usefullemerald:rapier",
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#usefullemerald:rapier",
+  "weight": 3
+}

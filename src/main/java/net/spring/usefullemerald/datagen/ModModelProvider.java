@@ -37,10 +37,15 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.EMERALD_DAGGER.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.EMERALD_RAPIER.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
 
-        itemModels.generateTrimmableItem(ModItems.EMERALD_HELMET.get(), ModArmorMaterials.EMERALD,ResourceLocation.fromNamespaceAndPath(UsefullEmerald.MODID, "emerald"),false);
-        itemModels.generateTrimmableItem(ModItems.EMERALD_CHESTPLATE.get(), ModArmorMaterials.EMERALD,ResourceLocation.fromNamespaceAndPath(UsefullEmerald.MODID, "emerald"),false);
-        itemModels.generateTrimmableItem(ModItems.EMERALD_LEGGINGS.get(), ModArmorMaterials.EMERALD,ResourceLocation.fromNamespaceAndPath(UsefullEmerald.MODID, "emerald"),false);
-        itemModels.generateTrimmableItem(ModItems.EMERALD_BOOTS.get(), ModArmorMaterials.EMERALD,ResourceLocation.fromNamespaceAndPath(UsefullEmerald.MODID, "emerald"),false);
+        itemModels.generateTrimmableItem(ModItems.EMERALD_HELMET.get(), ModArmorMaterials.EMERALD,ItemModelGenerators.TRIM_PREFIX_HELMET,false);
+        itemModels.generateTrimmableItem(ModItems.EMERALD_CHESTPLATE.get(), ModArmorMaterials.EMERALD,ItemModelGenerators.TRIM_PREFIX_CHESTPLATE,false);
+        itemModels.generateTrimmableItem(ModItems.EMERALD_LEGGINGS.get(), ModArmorMaterials.EMERALD,ItemModelGenerators.TRIM_PREFIX_LEGGINGS,false);
+        itemModels.generateTrimmableItem(ModItems.EMERALD_BOOTS.get(), ModArmorMaterials.EMERALD,ItemModelGenerators.TRIM_PREFIX_BOOTS,false);
+
+        itemModels.generateTrimmableItem(ModItems.REINFORCED_EMERALD_HELMET.get(), ModArmorMaterials.REINFORCED_EMERALD,ItemModelGenerators.TRIM_PREFIX_HELMET,false);
+        itemModels.generateTrimmableItem(ModItems.REINFORCED_EMERALD_CHESTPLATE.get(), ModArmorMaterials.REINFORCED_EMERALD,ItemModelGenerators.TRIM_PREFIX_CHESTPLATE,false);
+        itemModels.generateTrimmableItem(ModItems.REINFORCED_EMERALD_LEGGINGS.get(), ModArmorMaterials.REINFORCED_EMERALD,ItemModelGenerators.TRIM_PREFIX_LEGGINGS,false);
+        itemModels.generateTrimmableItem(ModItems.REINFORCED_EMERALD_BOOTS.get(), ModArmorMaterials.REINFORCED_EMERALD,ItemModelGenerators.TRIM_PREFIX_BOOTS,false);
 
         //Block
         blockModels.createTrivialCube(ModBlocks.REINFORCED_EMERALD_ORE.get());

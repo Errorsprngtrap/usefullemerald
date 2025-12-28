@@ -32,10 +32,16 @@ public class ModCreativeTabs {
                         output.accept(ModItems.EMERALD_CHESTPLATE);
                         output.accept(ModItems.EMERALD_LEGGINGS);
                         output.accept(ModItems.EMERALD_BOOTS);
+                        output.accept(ModItems.REINFORCED_EMERALD_HELMET);
+                        output.accept(ModItems.REINFORCED_EMERALD_CHESTPLATE);
+                        output.accept(ModItems.REINFORCED_EMERALD_LEGGINGS);
+                        output.accept(ModItems.REINFORCED_EMERALD_BOOTS);
                         output.accept(ModBlocks.DEEPSLATE_REINFORCED_EMERALD_ORE);
                         output.accept(ModBlocks.REINFORCED_EMERALD_ORE);
                         output.accept(ModBlocks.REINFORCED_EMERALD_BLOCK);
                         output.accept(ModBlocks.GLOW_REINFORCED_EMERALD);
+                        output.accept(ModItems.EMERALD_DAGGER);
+                        output.accept(ModItems.EMERALD_RAPIER);
 
                     }).build()
     );

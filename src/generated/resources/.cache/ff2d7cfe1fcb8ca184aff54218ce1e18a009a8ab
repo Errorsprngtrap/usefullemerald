@@ -1,6 +1,14 @@
-// 1.21.10	2025-12-20T17:33:58.2473773	Tags for minecraft:item mod id usefullemerald
+// 1.21.10	2025-12-28T17:51:52.1302807	Tags for minecraft:item mod id usefullemerald
 f8e180594268a8c7ebb39e8e34e0e145df13dc7f data/minecraft/tags/item/axes.json
+4e10b50e545522eb07b442dd72bb1f315b7c3bf8 data/minecraft/tags/item/enchantable/chest_armor.json
+eb05911066423a65cfc68ace92459ef559f6cc14 data/minecraft/tags/item/enchantable/durability.json
+e8f267ade496628efc3afe717e020a0d43b4d2e7 data/minecraft/tags/item/enchantable/foot_armor.json
+ca0559cdf45be293940292556a13d365898eb693 data/minecraft/tags/item/enchantable/head_armor.json
+3c4be8f69c9a2d25104a52c551c77a704e99454f data/minecraft/tags/item/enchantable/leg_armor.json
 ac20631632601c2573384e9fc1bac1ab46b52b74 data/minecraft/tags/item/hoes.json
 3aadd0bfbb89c5fca0e377815ff6012021170a11 data/minecraft/tags/item/pickaxes.json
 726a562ad6a62c8dfbf67509e8f67257579c0b06 data/minecraft/tags/item/shovels.json
 165983d419cfd551d5606d148bc7de8d7a32a966 data/minecraft/tags/item/swords.json
+3e2c96db35b5f4ecac22341af295b2f905e4e02b data/minecraft/tags/item/trimmable_armor.json
+01870d3b16a24fc7a788c01d7ec1ef199f3a67b1 data/usefullemerald/tags/item/dagger.json
+36cfed868251ab58d747f5b8755baf01581b75de data/usefullemerald/tags/item/rapier.json

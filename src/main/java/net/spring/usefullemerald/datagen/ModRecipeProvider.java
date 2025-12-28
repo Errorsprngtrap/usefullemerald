@@ -41,6 +41,8 @@ public class ModRecipeProvider extends RecipeProvider {
 
     @Override
     protected void buildRecipes() {
+        List<ItemLike> ReinforcedEmerald_Smeltable = List.of(ModBlocks.REINFORCED_EMERALD_ORE,
+                ModBlocks.DEEPSLATE_REINFORCED_EMERALD_ORE);
 
         shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.REINFORCED_EMERALD_BLOCK.get())
                 .pattern("BBB")
@@ -171,13 +173,47 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_emerald",has(Items.EMERALD))
                 .save(output);
 
-        shaped(RecipeCategory.BUILDING_BLOCKS, ModItems.EMERALD_NUGGET.get())
+        shaped(RecipeCategory.BUILDING_BLOCKS, Items.EMERALD)
                 .pattern("BBB")
                 .pattern("BBB")
                 .pattern("BBB")
-                .define('B', Items.EMERALD)
+                .define('B', ModItems.EMERALD_NUGGET)
                 .unlockedBy("has_emerald_nugget",has(ModItems.EMERALD_NUGGET))
                 .save(output);
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModItems.REINFORCED_EMERALD_HELMET.get())
+                .pattern("BBB")
+                .pattern("B B")
+                .define('B', ModItems.REINFORCED_EMERALD.get())
+                .unlockedBy("has_reinforced_emerald",has(ModItems.REINFORCED_EMERALD))
+                .save(output);
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModItems.REINFORCED_EMERALD_BOOTS.get())
+                .pattern("B B")
+                .pattern("B B")
+                .define('B', ModItems.REINFORCED_EMERALD.get())
+                .unlockedBy("has_reinforced_emerald",has(ModItems.REINFORCED_EMERALD))
+                .save(output);
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModItems.REINFORCED_EMERALD_LEGGINGS.get())
+                .pattern("BBB")
+                .pattern("B B")
+                .pattern("B B")
+                .define('B', ModItems.REINFORCED_EMERALD.get())
+                .unlockedBy("has_reinforced_emerald",has(ModItems.REINFORCED_EMERALD))
+                .save(output);
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModItems.REINFORCED_EMERALD_CHESTPLATE.get())
+                .pattern("B B")
+                .pattern("BBB")
+                .pattern("BBB")
+                .define('B', ModItems.REINFORCED_EMERALD.get())
+                .unlockedBy("has_reinforced_emerald",has(ModItems.REINFORCED_EMERALD))
+                .save(output);
+
+        oreSmelting(ReinforcedEmerald_Smeltable,RecipeCategory.MISC,ModItems.REINFORCED_EMERALD,10,200,"emerald");
+        oreBlasting(ReinforcedEmerald_Smeltable,RecipeCategory.MISC,ModItems.REINFORCED_EMERALD,10,100,"emerald");
+
     }
 
 
