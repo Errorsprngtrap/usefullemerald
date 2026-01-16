@@ -14,7 +14,7 @@ public class ModEffects {
             DeferredRegister.create(BuiltInRegistries.MOB_EFFECT, UsefullEmerald.MODID);
 
     public static final Holder<MobEffect> BLEED_EFFECT = MOB_EFFECTS.register("bleed",
-            () -> new BleedEffect(MobEffectCategory.HARMFUL,0x36ebab));
+            () -> new BleedEffect(MobEffectCategory.HARMFUL,0xb00e0e));
 
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);
