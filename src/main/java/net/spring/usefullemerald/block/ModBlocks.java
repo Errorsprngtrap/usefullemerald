@@ -2,14 +2,14 @@ package net.spring.usefullemerald.block;
 
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.spring.usefullemerald.UsefullEmerald;
+import net.spring.usefullemerald.block.custom.ReinforcedEmeraldPillarBlock;
 import net.spring.usefullemerald.items.ModItems;
 
 import java.util.function.Function;
@@ -39,6 +39,30 @@ public class ModBlocks {
                     .strength(5f)
                     .destroyTime(6f)
                     .explosionResistance(10f)
+            )
+    );
+
+    public static final DeferredBlock<Block> REINFORCED_EMERALD_PILLAR_BLOCK = registerBlock(
+            "reinforced_emerald_pillar_block",
+            (properties) -> new ReinforcedEmeraldPillarBlock(properties.requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)
+                    .strength(5f)
+                    .destroyTime(6f)
+                    .explosionResistance(10f)
+            )
+    );
+
+    public static final DeferredBlock<StairBlock> REINFORCED_EMERALD_STAIR_BLOCK = registerBlock(
+            "reinforced_emerald_stair_block",
+            (properties) -> new StairBlock(ModBlocks.REINFORCED_EMERALD_BLOCK.get().defaultBlockState(),
+                    properties.strength(2,2)
+            )
+    );
+
+    public static final DeferredBlock<SlabBlock> REINFORCED_EMERALD_SLAB_BLOCK = registerBlock(
+            "reinforced_emerald_slab_block",
+            (properties) -> new SlabBlock(properties
+                    .strength(2,2)
             )
     );
 

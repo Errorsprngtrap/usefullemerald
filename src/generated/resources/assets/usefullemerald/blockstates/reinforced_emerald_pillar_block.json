@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "usefullemerald:block/reinforced_emerald_pillar_block",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "usefullemerald:block/reinforced_emerald_pillar_block"
+    },
+    "facing=south": {
+      "model": "usefullemerald:block/reinforced_emerald_pillar_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "usefullemerald:block/reinforced_emerald_pillar_block",
+      "y": 270
+    }
+  }
+}

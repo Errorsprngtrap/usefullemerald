@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "usefullemerald:reinforced_emerald_stair_block"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "usefullemerald:blocks/reinforced_emerald_stair_block"
+}

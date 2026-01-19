@@ -4,6 +4,9 @@ import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
 import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.client.data.models.model.TextureMapping;
+import net.minecraft.client.data.models.model.TextureSlot;
+import net.minecraft.client.data.models.model.TexturedModel;
 import net.minecraft.core.Holder;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -48,10 +51,23 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateTrimmableItem(ModItems.REINFORCED_EMERALD_BOOTS.get(), ModArmorMaterials.REINFORCED_EMERALD,ItemModelGenerators.TRIM_PREFIX_BOOTS,false);
 
         //Block
-        blockModels.createTrivialCube(ModBlocks.REINFORCED_EMERALD_ORE.get());
+        blockModels.family(ModBlocks.REINFORCED_EMERALD_BLOCK.get())
+                .stairs(ModBlocks.REINFORCED_EMERALD_STAIR_BLOCK.get())
+                .slab(ModBlocks.REINFORCED_EMERALD_SLAB_BLOCK.get());
+
         blockModels.createTrivialCube(ModBlocks.DEEPSLATE_REINFORCED_EMERALD_ORE.get());
-        blockModels.createTrivialCube(ModBlocks.REINFORCED_EMERALD_BLOCK.get());
+        blockModels.createTrivialCube(ModBlocks.REINFORCED_EMERALD_ORE.get());
         blockModels.createTrivialCube(ModBlocks.GLOW_REINFORCED_EMERALD.get());
+
+        blockModels.createHorizontallyRotatedBlock(ModBlocks.REINFORCED_EMERALD_PILLAR_BLOCK.get(),
+                TexturedModel.ORIENTABLE_ONLY_TOP.updateTexture(TextureMapping ->
+                        TextureMapping.put(TextureSlot.SIDE,this.modLocation("block/reinforced_emerald_pillar_block"))
+                                .put(TextureSlot.FRONT,this.modLocation("block/reinforced_emerald_pillar_block"))
+                                .put(TextureSlot.BOTTOM, this.modLocation("block/reinforced_emerald_block"))
+                                .put(TextureSlot.TOP, this.modLocation("block/reinforced_emerald_block"))
+                )
+        );
+
     }
 
     //add filter for custom block

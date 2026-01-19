@@ -42,6 +42,9 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.GLOW_REINFORCED_EMERALD);
                         output.accept(ModItems.EMERALD_DAGGER);
                         output.accept(ModItems.EMERALD_RAPIER);
+                        output.accept(ModBlocks.REINFORCED_EMERALD_PILLAR_BLOCK);
+                        output.accept(ModBlocks.REINFORCED_EMERALD_STAIR_BLOCK);
+                        output.accept(ModBlocks.REINFORCED_EMERALD_SLAB_BLOCK);
 
                     }).build()
     );

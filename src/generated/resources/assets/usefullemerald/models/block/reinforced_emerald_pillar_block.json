@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "usefullemerald:block/reinforced_emerald_pillar_block",
+    "side": "usefullemerald:block/reinforced_emerald_pillar_block",
+    "top": "usefullemerald:block/reinforced_emerald_block"
+  }
+}

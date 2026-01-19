@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "usefullemerald:block/reinforced_emerald_block",
+    "side": "usefullemerald:block/reinforced_emerald_block",
+    "top": "usefullemerald:block/reinforced_emerald_block"
+  }
+}
