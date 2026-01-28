@@ -1,4 +1,5 @@
-// 1.21.10	2026-01-19T18:56:11.1339964	Loot Tables
+// 1.21.10	2026-01-27T09:29:14.7131436	Loot Tables
+481d46be8b800d5c584ef872e36bc7814d478c0b data/usefullemerald/loot_table/blocks/decorative_reinforced_emerald_block.json
 2180cb1a00bfda2666b48bbb817d659191127751 data/usefullemerald/loot_table/blocks/deepslate_reinforced_emerald_ore.json
 1fde6f1a6603aa7fbb172240ed5dd0a39575e9e6 data/usefullemerald/loot_table/blocks/glow_reinforced_emerald.json
 134a7a1fc906f3d2145e220be2bfd27909e9a0e3 data/usefullemerald/loot_table/blocks/reinforced_emerald_block.json

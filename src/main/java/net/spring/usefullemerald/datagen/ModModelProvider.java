@@ -68,7 +68,8 @@ public class ModModelProvider extends ModelProvider {
                 )
         );
 
-        
+        blockModels.createTrivialCube(ModBlocks.DECORATIVE_REINFORCED_EMERALD_BLOCK.get());
+
     }
 
     //add filter for custom block

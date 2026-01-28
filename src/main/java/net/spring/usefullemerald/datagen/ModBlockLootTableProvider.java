@@ -43,6 +43,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.REINFORCED_EMERALD_PILLAR_BLOCK.get());
         dropSelf(ModBlocks.REINFORCED_EMERALD_STAIR_BLOCK.get());
         dropSelf(ModBlocks.REINFORCED_EMERALD_SLAB_BLOCK.get());
+        dropSelf(ModBlocks.DECORATIVE_REINFORCED_EMERALD_BLOCK.get());
 
     }
 

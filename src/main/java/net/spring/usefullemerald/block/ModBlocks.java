@@ -5,6 +5,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -72,7 +73,15 @@ public class ModBlocks {
                     .sound(SoundType.GLASS)
                     .strength(1f)
                     .destroyTime(0.25f)
-                    .lightLevel((p_50876_) -> 10)
+                    .lightLevel(state -> 15)
+            )
+    );
+
+    public static final DeferredBlock<Block> DECORATIVE_REINFORCED_EMERALD_BLOCK = registerBlock(
+            "decorative_reinforced_emerald_block",
+            (properties) -> new Block(properties.requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)
+                    .strength(2,2)
             )
     );
 
