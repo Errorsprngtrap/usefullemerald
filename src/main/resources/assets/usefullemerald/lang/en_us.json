@@ -16,6 +16,11 @@
   "block.usefullemerald.reinforced_emerald_ore": "Reinforced Emerald Ore",
   "block.usefullemerald.deepslate_reinforced_emerald_ore": "Deepslate Reinforced Emerald Ore",
 
+  "block.usefullemerald.reinforced_emerald_pillar_block": "Reinforced Emerald Pillar",
+  "block.usefullemerald.decorative_reinforced_emerald_block": "Decorative Reinforced Emerald Block",
+  "block.usefullemerald.reinforced_emerald_stair_block": "Reinforced Emerald Stair",
+  "block.usefullemerald.reinforced_emerald_slab_block": "Reinforced Emerald Slab",
+
   "item.usefullemerald.emerald_nugget": "Emerald Nugget",
   "item.usefullemerald.emerald_apple": "Emerald Apple",
 

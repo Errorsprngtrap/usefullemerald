@@ -211,6 +211,26 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_reinforced_emerald",has(ModItems.REINFORCED_EMERALD))
                 .save(output);
 
+        shaped(RecipeCategory.BUILDING_BLOCKS,ModBlocks.REINFORCED_EMERALD_PILLAR_BLOCK.get())
+            .pattern("B").pattern("B").define('B',ModBlocks.REINFORCED_EMERALD_BLOCK.get())
+                .unlockedBy("has_reinforced_emerald",has(ModItems.REINFORCED_EMERALD))
+                .save(output);
+
+        shaped(RecipeCategory.BUILDING_BLOCKS,ModBlocks.DECORATIVE_REINFORCED_EMERALD_BLOCK.get())
+                .pattern("BB").pattern("BB").define('B',ModBlocks.REINFORCED_EMERALD_BLOCK.get())
+                .unlockedBy("has_reinforced_emerald",has(ModItems.REINFORCED_EMERALD))
+                .save(output);
+
+        shaped(RecipeCategory.BUILDING_BLOCKS,ModBlocks.REINFORCED_EMERALD_STAIR_BLOCK.get())
+                .pattern("B  ").pattern("BB ").pattern("BBB").define('B',ModBlocks.REINFORCED_EMERALD_BLOCK.get())
+                .unlockedBy("has_reinforced_emerald",has(ModItems.REINFORCED_EMERALD))
+                .save(output);
+
+        shaped(RecipeCategory.BUILDING_BLOCKS,ModBlocks.REINFORCED_EMERALD_SLAB_BLOCK.get())
+                .pattern("BBB").define('B',ModBlocks.REINFORCED_EMERALD_BLOCK.get())
+                .unlockedBy("has_reinforced_emerald",has(ModItems.REINFORCED_EMERALD))
+                .save(output);
+
         oreSmelting(ReinforcedEmerald_Smeltable,RecipeCategory.MISC,ModItems.REINFORCED_EMERALD,10,200,"emerald");
         oreBlasting(ReinforcedEmerald_Smeltable,RecipeCategory.MISC,ModItems.REINFORCED_EMERALD,10,100,"emerald");
 
