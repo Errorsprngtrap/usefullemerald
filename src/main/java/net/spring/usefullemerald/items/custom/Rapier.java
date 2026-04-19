@@ -1,6 +1,6 @@
 package net.spring.usefullemerald.items.custom;
 
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.entity.LivingEntity;
@@ -26,15 +26,15 @@ public class Rapier extends Item {
     public ItemAttributeModifiers getDefaultAttributeModifiers(ItemStack stack) {
         return ItemAttributeModifiers.builder()
                 .add(ENTITY_INTERACTION_RANGE,
-                new AttributeModifier(ResourceLocation.fromNamespaceAndPath("usefullemerald","rapierrange"),
+                new AttributeModifier(Identifier.fromNamespaceAndPath("usefullemerald","rapierrange"),
                         1f, AttributeModifier.Operation.ADD_VALUE),
                 EquipmentSlotGroup.MAINHAND)
                 .add(ATTACK_DAMAGE,
-                        new AttributeModifier(ResourceLocation.fromNamespaceAndPath("usefullemerald","rapierdamage"),
+                        new AttributeModifier(Identifier.fromNamespaceAndPath("usefullemerald","rapierdamage"),
                                 3f, AttributeModifier.Operation.ADD_VALUE),
                         EquipmentSlotGroup.MAINHAND)
                 .add(ATTACK_SPEED,
-                        new AttributeModifier(ResourceLocation.fromNamespaceAndPath("usefullemerald","rapierspd"),
+                        new AttributeModifier(Identifier.fromNamespaceAndPath("usefullemerald","rapierspd"),
                                 -2f, AttributeModifier.Operation.ADD_VALUE),
                         EquipmentSlotGroup.MAINHAND)
                 .build();

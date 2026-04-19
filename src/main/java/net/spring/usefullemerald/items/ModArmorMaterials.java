@@ -1,13 +1,12 @@
 package net.spring.usefullemerald.items;
 
-import net.minecraft.Util;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.util.Util;
 import net.minecraft.world.item.equipment.ArmorMaterial;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.minecraft.world.item.equipment.EquipmentAsset;
-import net.minecraft.world.item.equipment.EquipmentAssets;
 import net.neoforged.neoforge.common.Tags;
 import net.spring.usefullemerald.UsefullEmerald;
 import net.spring.usefullemerald.util.ModTags;
@@ -17,11 +16,11 @@ import java.util.EnumMap;
 public class ModArmorMaterials {
 
     public static ResourceKey<EquipmentAsset> EMERALD = ResourceKey.create(
-            ResourceKey.createRegistryKey(ResourceLocation.withDefaultNamespace("equipment_asset")),
-            ResourceLocation.fromNamespaceAndPath(UsefullEmerald.MODID, "emerald"));
+            ResourceKey.createRegistryKey(Identifier.withDefaultNamespace("equipment_asset")),
+            Identifier.fromNamespaceAndPath(UsefullEmerald.MODID, "emerald"));
     public static ResourceKey<EquipmentAsset> REINFORCED_EMERALD = ResourceKey.create(
-            ResourceKey.createRegistryKey(ResourceLocation.withDefaultNamespace("equipment_asset")),
-            ResourceLocation.fromNamespaceAndPath(UsefullEmerald.MODID, "reinforced_emerald"));
+            ResourceKey.createRegistryKey(Identifier.withDefaultNamespace("equipment_asset")),
+            Identifier.fromNamespaceAndPath(UsefullEmerald.MODID, "reinforced_emerald"));
 
     public static final ArmorMaterial EMERALD_ARMOR_MATERIAL = new ArmorMaterial(
             1500,

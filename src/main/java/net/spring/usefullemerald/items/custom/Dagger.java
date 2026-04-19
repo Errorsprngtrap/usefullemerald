@@ -1,7 +1,7 @@
 package net.spring.usefullemerald.items.custom;
 
 import net.minecraft.core.Holder;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -39,21 +39,21 @@ public class Dagger extends Item {
     public ItemAttributeModifiers getDefaultAttributeModifiers(ItemStack stack) {
         return ItemAttributeModifiers.builder().add(ENTITY_INTERACTION_RANGE,
                 new AttributeModifier(
-                        ResourceLocation.fromNamespaceAndPath("usefullemerald","dagger_range"),
+                        Identifier.fromNamespaceAndPath("usefullemerald","dagger_range"),
                         -1f,
                         AttributeModifier.Operation.ADD_VALUE
                 ),
                 EquipmentSlotGroup.MAINHAND)
                 .add(ATTACK_DAMAGE,
                         new AttributeModifier(
-                                ResourceLocation.fromNamespaceAndPath("usefullemerald","dagger_damage"),
+                                Identifier.fromNamespaceAndPath("usefullemerald","dagger_damage"),
                                 2.5f,
                                 AttributeModifier.Operation.ADD_VALUE
                         ),
                         EquipmentSlotGroup.MAINHAND)
                 .add(ATTACK_SPEED,
                         new AttributeModifier(
-                                ResourceLocation.fromNamespaceAndPath("usefullemerald","dagger_speed"),
+                                Identifier.fromNamespaceAndPath("usefullemerald","dagger_speed"),
                                 -2.25f,
                                 AttributeModifier.Operation.ADD_VALUE
                         ),
