@@ -4,6 +4,7 @@ import net.spring.usefullemerald.block.ModBlocks;
 import net.spring.usefullemerald.effect.ModEffects;
 import net.spring.usefullemerald.enchantment.ModEnchantmentEffects;
 import net.spring.usefullemerald.enchantment.ModEnchantments;
+import net.spring.usefullemerald.entity.ModEntities;
 import net.spring.usefullemerald.items.ModItems;
 import org.slf4j.Logger;
 
@@ -49,6 +50,9 @@ public class UsefullEmerald {
 
         //register enchants
         ModEnchantmentEffects.register(modEventBus);
+
+        //register entity
+        ModEntities.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

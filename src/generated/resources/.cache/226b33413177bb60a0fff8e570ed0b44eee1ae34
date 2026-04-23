@@ -1,4 +1,4 @@
-// 1.21.11	2026-04-19T04:10:11.613372	Model Definitions - usefullemerald
+// 1.21.11	2026-04-21T08:48:17.5939278	Model Definitions - usefullemerald
 06c637ba6580d24d40060607163978cf68e395d6 assets/usefullemerald/blockstates/decorative_reinforced_emerald_block.json
 ec36d7fd29c8e4630b1a64d938ef87280ec05b4a assets/usefullemerald/blockstates/deepslate_reinforced_emerald_ore.json
 bb26d028738d7c4627a841631635b7f53c91fb9f assets/usefullemerald/blockstates/glow_reinforced_emerald.json
@@ -21,6 +21,7 @@ ddfdf12e785699daccc5784b3c94049d78fb7890 assets/usefullemerald/items/emerald_leg
 d1afc922b553290c9faee2389e74075edd5921bb assets/usefullemerald/items/emerald_pickaxe.json
 9d60cf1f01876d71d679c4450fa92b92bb21d9f3 assets/usefullemerald/items/emerald_rapier.json
 412282602ddb48e942594072ab0f65e304ec0206 assets/usefullemerald/items/emerald_shovel.json
+953ac1fd02a6e2d5874aefa379b8b566cf610f06 assets/usefullemerald/items/emerald_spear.json
 d7525acb95460730d33b207bb472f2d02f3d65d4 assets/usefullemerald/items/emerald_sword.json
 f61a5d5ecf7c170d0931d0a4e3ccfaaaa813d90d assets/usefullemerald/items/glow_reinforced_emerald.json
 8be88612239884a394eae40fab7b35b33efa0ce0 assets/usefullemerald/items/reinforced_emerald.json
@@ -100,6 +101,7 @@ b187d9c3e6b7f4b9803fe6e08f2e1c78cd455c0a assets/usefullemerald/models/item/emera
 28d67cf6e310bc81630d7e27ae019bb70d521e48 assets/usefullemerald/models/item/emerald_pickaxe.json
 49f160f5e152c326d2c8c66d14e97cb3eaa1d9ce assets/usefullemerald/models/item/emerald_rapier.json
 abc649897e74c4b69ac5c639aedd95b91dc81805 assets/usefullemerald/models/item/emerald_shovel.json
+a9b51597ebaddc1473075a4d46e9eeffc57b6221 assets/usefullemerald/models/item/emerald_spear.json
 5757199a352f451cec905d2fbf664d5e140eee4f assets/usefullemerald/models/item/emerald_sword.json
 d2a43aacda9fa78e5d5bf210c59569e0cfcfde85 assets/usefullemerald/models/item/reinforced_emerald.json
 0fe5eafc6c200c6db63ddf3f83509a8c4a04bd76 assets/usefullemerald/models/item/reinforced_emerald_boots.json

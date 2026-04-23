@@ -68,5 +68,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.EMERALD_DAGGER.get())
                 .add(ModItems.EMERALD_RAPIER.get());
 
+        tag(ItemTags.SPEARS)
+                .add(ModItems.EMERALD_SPEAR.get());
     }
 }

@@ -27,6 +27,7 @@ public class ModCreativeTabs {
                         output.accept(ModItems.EMERALD_SHOVEL);
                         output.accept(ModItems.EMERALD_SWORD);
                         output.accept(ModItems.EMERALD_PICKAXE);
+                        output.accept(ModItems.EMERALD_SPEAR);
                         output.accept(ModItems.EMERALD_HOE);
                         output.accept(ModItems.EMERALD_HELMET);
                         output.accept(ModItems.EMERALD_CHESTPLATE);

@@ -3,10 +3,7 @@ package net.spring.usefullemerald.items;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.AxeItem;
-import net.minecraft.world.item.HoeItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ShovelItem;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.enchantment.Enchantable;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.neoforged.bus.api.IEventBus;
@@ -62,6 +59,15 @@ public class ModItems {
             "emerald_hoe",
             props -> new HoeItem(
                     ModToolMaterial.EMERALD,2f,-2.5f,props)
+    );
+
+    public static final DeferredItem<Item> EMERALD_SPEAR = ITEMS.registerItem(
+            "emerald_spear",
+            props -> new Item(props.spear(
+                    ModToolMaterial.EMERALD, 1.0F,1.0F,0.55F,
+                    3.25F, 8F, 7F,5.1F,
+                    11F, 4.6F)
+            )
     );
 
     //dagger
