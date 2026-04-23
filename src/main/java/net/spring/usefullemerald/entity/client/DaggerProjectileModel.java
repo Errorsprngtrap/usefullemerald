@@ -11,7 +11,7 @@ import net.spring.usefullemerald.UsefullEmerald;
 
 public class DaggerProjectileModel extends EntityModel<EntityRenderState> {
     public static final ModelLayerLocation LAYER_LOCATION =
-            new ModelLayerLocation(Identifier.fromNamespaceAndPath(UsefullEmerald.MODID, "dagger_converted"), "main");
+            new ModelLayerLocation(Identifier.fromNamespaceAndPath(UsefullEmerald.MODID, "dagger"), "main");
     public static final Identifier TEXTURE =
             Identifier.fromNamespaceAndPath(UsefullEmerald.MODID, "textures/entity/dagger/dagger.png");
     private final ModelPart main;
@@ -25,12 +25,12 @@ public class DaggerProjectileModel extends EntityModel<EntityRenderState> {
         MeshDefinition meshdefinition = new MeshDefinition();
         PartDefinition partdefinition = meshdefinition.getRoot();
 
-        PartDefinition main = partdefinition.addOrReplaceChild("main", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, 2.0F, -1.0F, 2.0F, 6.0F, 2.0F, new CubeDeformation(0.0F))
-                .texOffs(10, 8).addBox(-1.0F, -5.0F, 0.0F, 2.0F, 6.0F, 1.0F, new CubeDeformation(0.0F))
-                .texOffs(10, 9).addBox(-1.0F, -3.0F, -1.0F, 2.0F, 4.0F, 1.0F, new CubeDeformation(0.0F))
-                .texOffs(0, 13).addBox(-2.0F, 1.0F, -1.0F, 4.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 16.0F, 0.0F));
+        PartDefinition main = partdefinition.addOrReplaceChild("main", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -2.0F, 1.0F, 2.0F, 2.0F, 6.0F, new CubeDeformation(0.0F))
+                .texOffs(12, 15).addBox(-2.0F, -2.0F, 0.0F, 4.0F, 2.0F, 1.0F, new CubeDeformation(0.0F))
+                .texOffs(0, 15).addBox(-1.0F, -1.0F, -4.0F, 2.0F, 1.0F, 4.0F, new CubeDeformation(0.0F))
+                .texOffs(0, 8).addBox(-1.0F, -2.0F, -6.0F, 2.0F, 1.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 24.0F, 0.0F));
 
-        return LayerDefinition.create(meshdefinition, 16, 16);
+        return LayerDefinition.create(meshdefinition, 32, 32);
     }
 
     @Override

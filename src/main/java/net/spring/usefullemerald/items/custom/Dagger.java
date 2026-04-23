@@ -29,6 +29,8 @@ import static net.minecraft.world.entity.ai.attributes.Attributes.*;
 public class Dagger extends Item {
     private final Holder<MobEffect> effect;
 
+    float vel = 2f;
+
     public Dagger(Properties properties, Holder<MobEffect> effect) {
         super(properties);
         this.effect = effect;
@@ -77,7 +79,7 @@ public class Dagger extends Item {
                 SoundEvents.SNOWBALL_THROW, SoundSource.NEUTRAL, 0.5F, 0.4F / (pLevel.getRandom().nextFloat() * 0.4F + 0.8F));
         if (!pLevel.isClientSide()) {
             DaggerProjectileEntity daggerProjectile = new DaggerProjectileEntity(pPlayer, pLevel);
-            daggerProjectile.shootFromRotation(pPlayer, pPlayer.getXRot(), pPlayer.getYRot(), 0.0F, 1.5F, 0F);
+            daggerProjectile.shootFromRotation(pPlayer, pPlayer.getXRot(), pPlayer.getYRot(), 0.0F, vel, 0F);
             pLevel.addFreshEntity(daggerProjectile);
         }
 

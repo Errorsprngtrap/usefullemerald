@@ -21,7 +21,7 @@ public class ModEntities {
 
     public static final Supplier<EntityType<DaggerProjectileEntity>> DAGGER =
             ENTITY_TYPES.register("tomahawk", () -> EntityType.Builder.<DaggerProjectileEntity>of(DaggerProjectileEntity::new, MobCategory.MISC)
-                    .sized(0.5f, 1.15f).build(DAGGER_KEY)
+                    .sized(0.4f, 0.25f).build(DAGGER_KEY)
             );
 
 
