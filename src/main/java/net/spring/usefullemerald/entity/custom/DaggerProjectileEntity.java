@@ -1,5 +1,6 @@
 package net.spring.usefullemerald.entity.custom;
 
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -23,7 +24,8 @@ public class DaggerProjectileEntity extends AbstractArrow {
     @Override
     protected void onHitEntity(EntityHitResult result) {
         super.onHitEntity(result);
-        System.out.println("Hit an entity");
+        Entity entity = result.getEntity();
+        entity.hurt(this.damageSources().thrown(this, this.getOwner()), 4);
     }
 
     @Override
